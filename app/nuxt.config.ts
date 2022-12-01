@@ -11,6 +11,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+  modules: ["@nuxtjs/tailwindcss"],
   vite: {
     server: {
       watch: { usePolling: true },

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <CommonHeader />
-    <main>
+    <main class="px-2">
       <slot />
     </main>
   </div>
@@ -15,6 +15,7 @@ body {
 
 <style scoped>
 .container {
+  padding-bottom: 100px;
   max-width: 900px;
   margin: 0 auto;
   width: 80%;
