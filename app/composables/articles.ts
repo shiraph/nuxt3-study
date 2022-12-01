@@ -1,4 +1,4 @@
-import mock from "~~/mock/articles.json";
+import mock from "./mock/articles.json";
 import { Ref } from "nuxt/dist/app/compat/capi";
 import { Article } from "./models/Article";
 
@@ -16,7 +16,7 @@ export class ArticlesStore {
 
   public static async instance(): Promise<ArticlesStore> {
     this._instance = this._instance ?? new ArticlesStore();
-    this._instance.listMock();
+    this._instance.list();
     return this._instance;
   }
 
@@ -28,5 +28,5 @@ export class ArticlesStore {
     this._state.value = menus;
   }
 
-  private listMock = () => (this.state = mock);
+  private list = () => this.state = mock;
 }
