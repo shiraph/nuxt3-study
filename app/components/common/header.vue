@@ -9,6 +9,7 @@
       <NuxtLink class="text-gray-500 mr-4" to="/">Top</NuxtLink>
       <NuxtLink class="text-gray-500" to="articles">Articles</NuxtLink>
     </nav>
+    <img src="/img/dora.png" class="img" />
   </header>
 </template>
 
@@ -16,3 +17,9 @@
 const path = location.pathname.replace("/", "");
 const headerText = "Nuxt3 Study" + (!path.length ? "" : " - " + path);
 </script>
+<style>
+.img {
+  width: 100px;
+  margin:10px auto;
+}
+</style>
